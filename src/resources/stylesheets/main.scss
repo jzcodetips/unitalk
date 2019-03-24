@@ -1,0 +1,130 @@
+$white: #fff;
+$goodSamaritan: #3c6382;
+$dupain: #60a3bc;
+$red: #f05f3f;
+$forestBlues: #0a3d62;
+
+body {
+  font-family: 'Open Sans','Helvetica Neue', Arial,sans-serif;
+  background-color: $goodSamaritan;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+
+  .navbar {
+    text-transform: uppercase;
+    padding: 15px 0px 15px 15px;
+
+    a {
+      color: $white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: .35s;
+
+      &:hover {
+        color: $dupain;
+      }
+    }
+
+  }
+
+  .app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 auto;
+
+    .user-input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+      flex: 1;
+      margin: 0 15px;
+
+      color: $white;
+
+      .rodal-message {
+        font-size: 20px;
+        color: $dupain;
+      }
+
+      .line {
+        margin: 0 0 20px 0;
+        width: 50px;
+        border-top: solid 3px $dupain;
+      }
+
+      .message {
+        margin: 20px 0;
+        font-size: 20px;
+      }
+
+      .buttons {
+        align-self: flex-end;
+        display: flex;
+        margin-top: 10px;
+
+        :first-child {
+          margin-right: 6px;
+        }
+
+        .button {
+          padding: 8px;
+          border-radius: 4px;
+          background-color: $forestBlues;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+   
+
+      textarea {
+        align-self: stretch;
+        padding: 10px;
+        height: 150px;
+        color: $white;
+        font-size: 15px;
+        background-color: $forestBlues;
+      }
+
+      .options {
+        align-self: flex-start;
+        font-size: 20px;
+        margin: 10px 0 5px 0;
+      }
+
+      .options-container {
+        margin-top: 10px;
+        align-self: stretch;
+        border: solid 3px $dupain;
+        border-radius: 4px;
+        
+        display: flex;
+        justify-content: space-around;
+
+        .options-item {
+          padding: 5px 0;
+          cursor: pointer;
+
+          &.selected {
+            color: $forestBlues;
+          }
+        }
+      }
+    }
+
+    .scene-container {
+      flex: 1;
+      min-height: 100%;
+      background-color: $forestBlues;
+    }
+  }
+}

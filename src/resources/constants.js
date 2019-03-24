@@ -1,0 +1,3 @@
+export const SWITCH_MODEL = 'SWITCH_MODEL'
+export const SET_IS_ORGANE_VISIBLE = 'SET_IS_ORGANE_VISIBLE'
+export const SET_IS_LOADED = 'SET_IS_LOADED'
